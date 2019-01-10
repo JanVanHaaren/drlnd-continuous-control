@@ -45,4 +45,6 @@ The 20 agents solved the environment in 127 episodes obtaining an average reward
 The following future work directions are worth exploring:
 * **Optimize hyperparameters:** optimize the parameters using Bayesian optimization;
 * **Optimize network architectures:** try different numbers of units for the hidden layers;
-* **Perform Distributed Distributional Deterministic Policy Gradient (D4PG) Learning:** replace the Deep Deterministic Policy Gradient Learning algorithm by the Distributed Distributional Deterministic Policy Gradient Learning (D4PG) algorithm ([paper](https://openreview.net/pdf?id=SyZipzbCb)).
+* **Perform Distributed Distributional Deterministic Policy Gradient learning:** replace the Deep Deterministic Policy Gradient algorithm by the Distributed Distributional Deterministic Policy Gradient (D4PG) algorithm ([paper](https://openreview.net/pdf?id=SyZipzbCb));
+* **Perform Proximal Policy Optimization learning:** replace the Deep Deterministic Policy Gradient algorithm by the Proximal Policy Optimization (PPO) algorithm ([paper](https://arxiv.org/pdf/1707.06347.pdf));
+* **Perform Asynchronous Advantage Actor-Critic learning:** replace the Deep Deterministic Policy Gradient algorithm by the Asynchronous Advantage Actor-Critic (A3C) algorithm ([paper](https://arxiv.org/pdf/1602.01783.pdf)).
