@@ -4,7 +4,7 @@
 
 The goal of this project is to train an agent to move a double-jointed robot hand to a goal location and keep it there. The agent receives a reward of +0.1 for each step that the agent's hand is in the goal location. Thus, the goal of the agent is to maintain its position at the goal location for as many time steps as possible.
 
-The observation space consists of 33 variables corresponding to the position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to the torque applicable to the two joints. Each entry in the action vector is a number between -1 and 1.
+The observation space consists of 33 variables corresponding to the position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to the torque applicable to the two joints. Each entry in the action vector is a number between -1 and +1.
 
 This project addresses an environment where 20 identical agents are trained simultaneously. The agents must get an average score of +30 over 100 consecutive episodes to solve the environment.
 
