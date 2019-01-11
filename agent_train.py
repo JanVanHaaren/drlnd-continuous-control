@@ -15,12 +15,12 @@ def run_ddpg(environment, agents, weights_actor, weights_critic, n_episodes=2000
 
     Params
     ======
-        environment (UnityEnvironment):
-        agents (Agents):
-        weights_actor (str):
-        weights_critic (str):
+        environment (UnityEnvironment): environment
+        agents (Agents): Agents object representing the agents
+        weights_actor (str): file containing the weights for the actor
+        weights_critic (str): file containing the weights for the critic
         n_episodes (int): maximum number of training episodes
-        max_t (int): maximum number of timesteps per episode
+        max_t (int): maximum number of time steps per episode
     """
     brain_name = environment.brain_names[0]
 
@@ -108,7 +108,7 @@ def main(arguments):
 
 
 def parse_arguments(arguments):
-    parser = argparse.ArgumentParser(description='Run the Navigation trainer.')
+    parser = argparse.ArgumentParser(description='Run the Reacher trainer.')
     parser.add_argument('--episodes', '-e', required=False, type=int, default=1000, help='Number of episodes to run.')
     parser.add_argument('--actor', '-a', required=True, type=str, help='Path to a file to store the network weights for the actor.')
     parser.add_argument('--critic', '-c', required=True, type=str, help='Path to a file to store the network weights for the critic.')
