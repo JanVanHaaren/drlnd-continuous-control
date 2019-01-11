@@ -27,7 +27,7 @@ def run_agent(environment, agents):
         if np.any(dones):
             break
 
-    print('Score: {}'.format(scores))
+    print('Score: {}'.format(np.mean(scores)))
 
 
 def setup_environment(file_name):

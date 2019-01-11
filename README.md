@@ -24,8 +24,22 @@ This project addresses an environment where 20 identical agents are trained simu
 
     (_For AWS_) If you'd like to train the agent on AWS (and have not [enabled a virtual screen](https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Training-on-Amazon-Web-Service.md)), then please use [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip) to obtain the environment.
 
-2. Place the file in the repository folder and unzip (or decompress) the file. 
+2. Place the file in the repository folder and unzip (or decompress) the file.
 
+3. Create a Conda environment containing the packages listed in the `environment.yml` file as follows:
+    ```bash
+    $ conda env install -f environment.yml
+    ```
+
+4. Activate the created `drlnd-continuous-control` environment as follows:
+
+    ```bash
+    # Linux and Mac OSX
+    $ source activate drlnd-continuous-control
+    
+    # Windows
+    $ activate drlnd-continuous-control
+    ```
 
 ## Training and testing the agents
 
